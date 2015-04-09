@@ -1,30 +1,60 @@
-	var test = {};
 $(document).ready(function() {
-	$('.btnOpen').click(function(){
-		
-		$('#wraper').popupPlugin({'animateOpening':'top' ,
-								  'title':'this is my  title',
-								  'content':'Write Some Contetnt here.',//<img src="SETTINGS.png">',
-								  'buttons':{'name':'Hello','action':function(){alert("Hello btn vas clicked");}},
-								  'onClose':{'animateCloseing':'top'}
-								});
-		
-	});
-		//$('#wraper').popupPlugin();	
-/*
-        Object.defineProperty(test, "hello", {
-            get : function () { 
-            	console.log('aaaaaaaaaaaaa', this);
-                return this;
+    $('.btnOpen').click(function() {
+
+        var html = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><img src="img/SETTINGS.png"><img src="img/SETTINGS.png"><img src="img/SETTINGS.png">'
+
+   /*     $('#myPopup').popupPlugin({
+            'animateOpening': 'top',
+            'title': 'My Title',
+            'closeEsc': true,
+            'overlay': true,
+            'modal': true,
+            'autoclose': false,
+            'timeout': 1000,
+            'content': html,
+            'buttons': {
+                'Help': {
+                    'style': 'simple',
+                    'action': function() {
+                        alert("Help btn was clicked");
+                    }
+                },
+                'Close': {}
             },
-            set : function (val) {
-                alert(val);
-                this._hello = val;
-            	console.log('bbbbbbbbbbbbbbbbbbb', this._hello);
+            'onClose': {
+                'animateCloseing': 'right'
+            }
+        });*/
+
+
+        $('#myPopup').popupPlugin();
+
+
+   /*     $('#myPopup').popupPlugin({
+            'animateOpening': 'top',
+            'buttons': {
+                'Help': {
+                    'style': 'warning',
+                    'action': function() {
+                        alert("Help btn was clicked");
+                    }
+                },
+                'No': {
+                    'style': 'danger',
+                    'action': function() {
+                        alert("No btn was clicked");
+                    }
+                },
+                'Close': {}
+            },
+            'onClose': {
+                'animateCloseing': 'right'
             }
         });
-
-        test.hello = "world";
-        test.aa = "es aan em ";
 */
+
+
+
+    });
+
 });
